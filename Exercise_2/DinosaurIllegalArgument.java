@@ -8,15 +8,12 @@ class Dinosaur{
         this.name = name;
         this.weight = weight;
     }
-    String getName(){
-        return this.name;
-    }
-    void setWeight(double weight){
-        this.weight = weight;
-    }
+    String getName(){ return this.name; }
+    void setWeight(double weight){ this.weight = weight; }
 
 }
 public class DinosaurIllegalArgument {
+
     static void updateDinosaurWeight(double weight, Dinosaur dinosaur) throws IllegalArgumentException{
         if (weight < 0){
             throw new IllegalArgumentException("Dinosaur should weigh more than zero!");
@@ -26,6 +23,7 @@ public class DinosaurIllegalArgument {
                     ": " + weight + " lbs");
         }
     }
+
     public static void main(String[] args) {
         Dinosaur tRex = new Dinosaur("Bitey", 20);
         try {
