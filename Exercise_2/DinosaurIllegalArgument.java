@@ -1,20 +1,8 @@
 package Exercise_2;
 
-class Dinosaur{
-    private double weight;
-    private final String name;
-
-    Dinosaur(String name, double weight) {
-        this.name = name;
-        this.weight = weight;
-    }
-    String getName(){ return this.name; }
-    void setWeight(double weight){ this.weight = weight; }
-
-}
 public class DinosaurIllegalArgument {
 
-    static void updateDinosaurWeight(double weight, Dinosaur dinosaur) throws IllegalArgumentException{
+    public static void updateDinosaurWeight(double weight, Dinosaur dinosaur) throws IllegalArgumentException{
         if (weight < 0){
             throw new IllegalArgumentException("Dinosaur should weigh more than zero!");
         } else {
