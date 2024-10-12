@@ -15,16 +15,18 @@ class CriticalHealthException extends Exception {
 public class CriticalDinosaurHealth {
     public static void main(String[] args) {
         Dinosaur dino = new Dinosaur("Judas", 123);
-        try {
-            Instant startTime = Instant.now();
-            Instant endTime = startTime.plusSeconds(5);
+        Random random = new Random();
+        DinosaurHealth dinoHealth;
+        int randomNumber;
+        Instant startTime = Instant.now();
+        Instant endTime = startTime.plusSeconds(5);
 
+        try {
             while (Instant.now().isBefore(endTime)) {
-                Random random = new Random();
-                int randomNumber = random.nextInt(50) - 25;
+                randomNumber = random.nextInt(50) - 25;
                 dino.changeHealth(randomNumber);
 
-                DinosaurHealth dinoHealth = DinosaurHealth.giveHealthStatus(dino.getHealth());
+                dinoHealth = DinosaurHealth.giveHealthStatus(dino.getHealth());
 
                 System.out.println(Instant.now() + ": Health status for " + dino.getName()
                         + ": " + dinoHealth);
@@ -38,8 +40,8 @@ public class CriticalDinosaurHealth {
 
             // Magical life saving treatment performed.
             dino.changeHealth(100);
-            DinosaurHealth healthStatus = DinosaurHealth.giveHealthStatus(dino.getHealth());
-            System.out.print(dino.getName() + " is all better! Health: " + healthStatus);
+            dinoHealth = DinosaurHealth.giveHealthStatus(dino.getHealth());
+            System.out.print(dino.getName() + " is all better! Health: " + dinoHealth);
 
         } catch (InterruptedException e) {
             e.printStackTrace();

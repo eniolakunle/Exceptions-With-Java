@@ -1,4 +1,5 @@
 # Exercise 3 🩺
+
 ___
 Even in exceptional circumstances, certain operations should always execute. For example, a
 daily audit of dinosaurs’ health should happen, whether an exception occurs (for example due

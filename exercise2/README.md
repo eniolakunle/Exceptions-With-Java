@@ -1,4 +1,5 @@
 # Exercise 2 📚
+
 ___
 While updating dinosaur data, invalid values could sometimes be provided. Write an
 updateDinosaurWeight method that takes a weight value and a Dinosaur object. If

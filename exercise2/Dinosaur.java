@@ -1,7 +1,6 @@
 package exercise2;
 
 
-
 public class Dinosaur {
     private double weight;
     private final String name;
@@ -20,14 +19,14 @@ public class Dinosaur {
         return this.health;
     }
 
-    public void changeHealth(int deltaHealth){
+    public void changeHealth(int deltaHealth) {
         // Positive or negative
         this.health += deltaHealth;
 
-        if (this.health > 100){
+        if (this.health > 100) {
             this.health = 100;
-        } else if (this.health < 0){
-                this.health = 0;
+        } else if (this.health < 0) {
+            this.health = 0;
         }
 
     }

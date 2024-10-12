@@ -1,4 +1,5 @@
 # Exercise 1 📖
+
 ___
 When reading and writing the dinosaur data, it is possible that the file cannot be opened due
 to different circumstances. Perhaps someone moved it, it’s in use, or something else. Your task
