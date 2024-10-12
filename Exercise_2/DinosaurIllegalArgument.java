@@ -2,8 +2,8 @@ package Exercise_2;
 
 public class DinosaurIllegalArgument {
 
-    public static void updateDinosaurWeight(double weight, Dinosaur dinosaur) throws IllegalArgumentException{
-        if (weight < 0){
+    public static void updateDinosaurWeight(double weight, Dinosaur dinosaur) throws IllegalArgumentException {
+        if (weight < 0) {
             throw new IllegalArgumentException("Dinosaur should weigh more than zero!");
         } else {
             dinosaur.setWeight(weight);
@@ -16,7 +16,7 @@ public class DinosaurIllegalArgument {
         Dinosaur tRex = new Dinosaur("Bitey", 20);
         try {
             updateDinosaurWeight(-1, tRex);
-        } catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
         updateDinosaurWeight(25, tRex);
