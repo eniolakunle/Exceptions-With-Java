@@ -14,6 +14,6 @@ Stegosaurus: Herbivore
 Spinosaurus: Carnivore
 Ankylosaurus: Herbivore
 ```
-
+___
 <br /><br />
 ![LearningWithProjects.jpg](../LearningWithProjects.jpg)
