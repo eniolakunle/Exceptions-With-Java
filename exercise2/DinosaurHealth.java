@@ -1,4 +1,4 @@
-package Exercise_2;
+package exercise2;
 
 public enum DinosaurHealth{
     EXCELLENT,

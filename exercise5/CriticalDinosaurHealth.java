@@ -1,7 +1,7 @@
-package Exercise_5;
+package exercise5;
 
-import Exercise_2.Dinosaur;
-import Exercise_2.DinosaurHealth;
+import exercise2.Dinosaur;
+import exercise2.DinosaurHealth;
 
 import java.time.Instant;
 import java.util.Random;

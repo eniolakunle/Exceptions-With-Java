@@ -1,7 +1,7 @@
-package Exercise_3;
+package exercise3;
 
-import Exercise_2.Dinosaur;
-import Exercise_2.DinosaurIllegalArgument;
+import exercise2.Dinosaur;
+import exercise2.DinosaurIllegalArgument;
 
 public class DailyAudit {
 

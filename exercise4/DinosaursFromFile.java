@@ -1,4 +1,4 @@
-package Exercise_4;
+package exercise4;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.IOException;
 public class DinosaursFromFile {
 
     public static void main(String[] args) {
-        try (FileReader fr = new FileReader("Exercise_4/dinosaurs.txt")) {
+        try (FileReader fr = new FileReader("exercise4/dinosaurs.txt")) {
             int line;
 
             while ((line = fr.read()) != -1) {
